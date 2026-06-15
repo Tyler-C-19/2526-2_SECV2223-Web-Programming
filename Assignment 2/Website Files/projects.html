@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Projects page - What I've done so far throughout my tertiary education. TYLER CHOK KE QING (A24CS5068) [SECV2223: Web Programming - Assignment 2]">
+    <title>TYLER CHOK KE QING (A24CS5068) - ASSIGNMENT 2 (PROJECTS PAGE)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">TYLER CHOK</a>
+            <ul class = "nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html" class="active">My Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="https://github.com/Tyler-C-19" target="_blank" class="nav-external">GitHub →</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1> My<span class="coloured"> Projects</span></h1>
+
+        <p>
+            A curated list of my projects during my tertiary education so far.
+        </p>
+    </header>
+
+    <main>
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title">
+                    📂 All Projects
+                </h2>
+
+                <div class="projects-filter">
+                    <h3>Filter Projects:</h3>
+                    <button class="projects-filter-button active" onclick="filterProjectCategory('all')">All</button>
+                    <button class="projects-filter-button" onclick="filterProjectCategory('c++')">C++</button>
+                    <button class="projects-filter-button" onclick="filterProjectCategory('hci')">HCI</button>
+                    <button class="projects-filter-button" onclick="filterProjectCategory('others')">Others</button>
+                </div>
+
+                <!-- SwiftRide Concept, Student Feedback and Complaint System, InfinitePROTECH images are by me. -->
+
+                <div class="projects-grid">
+                    <article class="projects-box box" project-category="hci">
+                        <div class="projects-thumbnail">
+                            <img src="images/SwiftRide.webp" alt="SwiftRide Project's Thumbnail">
+                        </div>
+                        <div class="projects-body">
+                            <h3> SwiftRide Concept</h3>
+                            <h4> Human Computer Interaction • 2025/2026</h4>
+
+                            <p>
+                                SwiftRide was conceptualised from the idea of improving upon the current available ride-hailing options, adding unique features such as InstaRide and SmartPool 
+                                as well as integrating core Human Computer Interaction concepts such as Shneiderman's Golden Rules and interaction metaphors to ensure the 
+                                application's support for user-friendliness and usability.
+                            </p>
+
+                            <div class="box-links">
+                                <a href="https://sites.google.com/view/hipc" target="_blank">View our Journey →</a>
+                            </div>
+
+                            <div class="box-links">
+                                <a href="https://youtu.be/rL2M4BDMzvE" target="_blank">View the Concept Video →</a>
+                            </div>
+                    </article>
+
+                    <article class="projects-box box" project-category="c++">
+                        <div class="projects-thumbnail">
+                            <img src="images/FeedbackComplaintSystem.webp" alt="Feedback and Complaint System Project's Thumbnail">
+                        </div>
+                        <div class="projects-body">
+                            <h3> Student Feedback and Complaint System</h3>
+                            <h4> Programming Technique II • 2024/2025</h4>
+
+                            <p>
+                                Built using fundamental C++ concepts learned throughout the Programming Technique II course, the Student Feedback and Complaint System is a simple, yet
+                                feature-rich system that uses the command line interface (CLI) to process feedback and complaints. It includes advanced features such as a logging in feature,
+                                dual-user mode (student and admin) as well as a file-based database system to store all reports.
+                            </p>
+
+                            <a href="https://drive.google.com/file/d/1Oh_ZZddWSBGXvApGyiHJOYjiOOMtUg6k/view?usp=sharing" target="_blank" class="box-links">View the Project Report →</a>
+
+                        </div>
+                    </article>
+
+                    <article class="projects-box box" project-category="others">
+                        <div class="projects-thumbnail">
+                            <img src="images/InfinitePROTECH.webp" alt="InfinitePROTECH Project's Thumbnail" >
+                        </div>
+                        <div class="projects-body">
+                            <h3> InfinitePROTECH</h3>
+                            <h4> Technology & Information System • 2024/2025</h4>
+
+                            <p>
+                                InfinitePROTECH is a proposed mobile application designed to promote cybersecurity actively, through features such as fraud detection and passively through education.
+                                One stand-out feature would be 'Lockdown Mode', which is a last-resort protection method to protect users' devices. For this project, we created a low-fidelity
+                                prototype to showcase how the app would function and be seen by users.
+                            </p>
+
+                            <a href="https://youtu.be/-n2pWXk1pg4" target="_blank" class="box-links">View the Presentation Video →</a>
+
+                        </div>
+                    </article>
+
+                    <article class="projects-box box" project-category="na">
+                        <!-- Coming Soon Banner sourced from: https://www.canva.com -->
+                        <div class="projects-thumbnail">
+                            <img src="images/ComingSoon.webp" alt="Coming Soon Thumbnail">
+                        </div>
+                        <div class="projects-body">
+                            <h3> Coming Soon!</h3>
+                            <h4> Stay tuned.</h4>
+
+                            <p>
+                                The next big project is just around the corner! What could it be? Stay tuned to find out.
+                            </p>
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="nav-links container" style="padding: 16px">
+            <a href="index.html"> ← Back Home</a>
+        </div>
+
+        <p>
+            © 2026 TYLER CHOK KE QING (A24CS5068).
+        </p>
+        <p>
+            [SECV2223: Web Programming - Assignment 2]
+        </p>
+        <p class="credits" style="font-size: 12px">
+            'Coming Soon' Banner Sourced From:&nbsp<a href="https://www.canva.com/" target="_blank">Canva →</a>
+        </p>
+    </footer>
+
+    <script src="javascript.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+                            
+
+
+                                                        
